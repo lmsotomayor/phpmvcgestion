@@ -1,0 +1,641 @@
+@font-face { 
+  font-family: Droid Sans; 
+    src: url('../fonts/DroidSans-webfont.eot'); 
+    src: local("Droid Sans"), url('../fonts/DroidSans-webfont.woff'); 
+} 
+
+@font-face { 
+  font-family: News Cycle; 
+    src: url('../fonts/NewsCycle-Regular.eot'); 
+    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+} 
+
+body {
+	background: #FFF;
+	color: #000;
+        font: normal .90em 'Droid Sans', arial, sans-serif;
+	line-height: 2em;
+}
+
+p { 
+  padding: 0 0 16px 0;
+  line-height: 1.7em;
+}
+
+img { 
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color: #0000FF; 
+  letter-spacing: 0.5em;
+  padding: 0 0 0.5em 0;
+}
+
+h7 { 
+  color: #369ab8; 
+  letter-spacing: 0em;
+  padding: 0 0 0.5em 0;
+}
+
+h1, h2, h3 { 
+  font: bold 120% 'News Cycle', arial;
+  margin: 0 0 1em 0;
+  padding: 0 0 0.1em 0;
+}
+
+h2 { 
+  font-size: 160%;
+}
+
+h3 { 
+  font-size: 140%;
+  padding: 0.5em 0 0 0;
+}
+
+h4, h5, h6 { 
+  padding: 0 0 0.5em 0;
+  font: normal 120% 'Droid Sans', arial, sans-serif;
+}
+
+h6 { 
+  padding: 0 0 0.5em 0;
+  font: normal 200% 'Droid Sans', arial, sans-serif;
+}
+
+a, a:hover { 
+  outline: none;
+  text-decoration: none;
+  color: #000; 
+}
+
+a:hover { 
+  text-decoration: underline;
+}
+
+blockquote { 
+  margin: 2em 0; 
+  padding: 1em 2em 0 2em;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul { 
+  margin: 0.1em 0 1em 2em;
+}
+
+ul li { 
+  list-style-type: none;
+  margin: 0 0 0.25em 0; 
+  padding: 0 0 0.25em 0.5em;
+  line-height: 1.5em;
+}
+
+
+ol { 
+  margin: 0.1em 0 2em 2em;
+}
+
+ol li { 
+  margin: 0 0 0.5em 0; 
+}
+
+.left { 
+  float: left;
+  width: auto;
+  margin-right: 1em;
+}
+
+.right { 
+  float: right; 
+  width: auto;
+  margin-left: 1em;
+}
+
+.center { 
+  display: block;
+  text-align: center;
+  margin: 2em auto;
+}
+
+#header_container {
+	padding-bottom: -5em;
+	background: #E80003 url(../images/pattern.png) repeat;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5)  2px 2px 3px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 3px;
+	box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 3px;
+}
+
+.wrapper {
+	margin-left: -3em;
+	padding: 0.5em 0.5em 1.5em 0em;
+}
+
+#header h1 a { 
+  font: normal 150% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+  color: #FFF;
+  text-shadow: 1px 1px #000;
+  text-decoration: none;
+}
+
+#header h2 { 
+  font: normal 140% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  margin-top: -1em;
+  text-transform: none;
+  color: #FFF;
+  text-shadow: 1px 1px #000;  
+}
+
+#header h1 a .header_colour { 
+  color: #FFF;
+  text-shadow: 1px 1px #000;  
+}
+
+#strapline { 
+  font: normal 200% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+}
+
+.button {
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+	border: 1px solid; 
+	width: 6em; 
+	margin: 0 0 0 14em; 
+	height: 2em;
+	cursor: pointer; 
+	background: #E80003;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+	.image
+	{
+		display: inline-block;
+		outline: 0;
+	}
+	
+		.image img
+		{
+			display: block;
+			width: 100%;
+			border-radius: 8px;
+		}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2.5em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2.5em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		}
+
+
+#main-nav ul { 
+    font: normal 120% 'News Cycle', arial;
+	float: right;
+	list-style: none;
+}
+
+#main-nav ul li { 
+	display: inline-block; 
+	margin: 0 1em 0 1em; 
+	padding: 0.35em 0em 0.35em 0em; 
+	border-radius: 0.5em; 	
+}
+
+#main-nav ul li a { 
+	color: #FFF;
+	text-shadow: 1px 1px #000; 	
+}
+
+#main-nav ul li a.active { 
+	color: #FFF;
+	text-shadow: 1px 1px #000;  
+	text-decoration: underline; 
+}
+
+#site_content {
+    margin: 2em 0em;
+}
+
+#banner {
+	color: #fff;
+	text-align: center;
+	-moz-box-shadow: rgba(0, 0, 0, 0.5)  0px 3px 5px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+}
+
+
+#sidebar {
+        margin: 0 0 2em 0;
+	padding: 0 1em 1em 2em;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px; 
+}
+
+#site_content{
+background: url(../images/fondopantalla.jpg) repeat;
+
+}
+
+.footer-wrapper{
+	background: #E80003 url(../images/pattern.png) repeat;
+}
+
+footer { 
+  font: 100% 'Droid Sans', arial, sans-serif;
+  text-align: center; 
+  margin: 0;
+}
+
+footer p { 
+  line-height: 1.7em;
+  color: #FFF;
+}
+
+footer a { 
+  text-decoration: none;
+  color: #FFF;  
+}
+
+footer a:hover { 
+  text-decoration: underline;
+  color: #FFF;
+}
+
+/* A single menu */
+.dropotron { 
+	background: #EEE; 
+	border-radius: 0.5em; 
+	list-style: none; 
+	margin: 0; 
+	min-width: 10em; 
+	padding: 0.75em 1em 0.75em 1em; 
+}
+			
+.dropotron > li { 
+	border-top: solid 1px #555;
+	margin: 0;
+	padding: 0;
+}
+
+.dropotron > li:first-child { 
+	border-top: 0;
+}
+			
+.dropotron > li > a { 
+	color: #000; 
+	display: block; 
+	padding: 0.5em 0 0.5em 0; 
+	text-decoration: none; 	
+}
+
+.dropotron > li.active > a, .dropotron > li:hover > a {
+	color: #E80003;}
+
+/* Only applies to top level ("level-0") menus */
+.dropotron.level-0 { 
+	margin-top: 1.25em;
+}
+
+.dropotron.level-0:before {
+	content: ''; 
+	position: absolute; 
+	border-bottom: solid 0.5em #444; 
+	border-left: solid 0.5em transparent;
+	border-right: solid 0.5em transparent; 
+	top: -0.5em; 
+}
+
+nav select {
+  display: none;
+}
+ 
+@media (max-width: 480px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block;}
+}  
+
+.form_settings { 
+	margin: 1em 0 0 0;
+}
+
+.form_settings p {
+	padding: 0 0 0.25em 0;
+}
+
+.form_settings span {
+	float: left; 
+	width: 22em; 
+	text-align: left;
+}
+  
+.text {
+	padding: 0.25em; 
+	width: 20em; 
+	font: 100% arial; 
+	margin-bottom: 1em;
+	border: 1px solid #bbb; 
+	color: #47433F;
+}
+  
+.form_settings input[type="checkbox"] {
+	padding: 0; 
+	width: 1em; 
+	font: 100% arial; 
+	border: 0; 
+	color: #47433F;
+}
+
+.submit { 
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+	border: 1px solid; 
+	width: 8em; 
+	margin: 0 0 0 14em; 
+	height: 3em;
+	cursor: pointer; 
+	background: darkgreen;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.submitChico { 
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	border: 1px solid; 
+	width: 12em; 
+	
+	height: 2em;
+	cursor: pointer; 
+	background: darkgreen;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.submitChico2 { 
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	border: 1px solid; 
+	width: 12em; 
+	margin: 0 0 0 14em; 
+	height: 2em;
+	cursor: pointer; 
+	background: #3300FF;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.submitVenta { 
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	border: 2px solid; 
+	width: 10em; 
+	margin: 0 0 0 14em; 
+	height: 3em;
+	cursor: pointer; 
+	background: #2E2EFE;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.submitDialog { 
+	font-family: 'Source Sans Pro';
+	font-weight: 200;
+	border: 1px solid; 
+	width: 7em; 
+	margin: 0 10 10 0em; 
+	height: 2em;
+	cursor: pointer; 
+	background: #3300FF;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.btnEditar { 
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	border: 1px solid; 
+	width: 6em; 
+	height: 2em;
+        margin: 1 0 0 0em; 
+	cursor: pointer; 
+	background: coral;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.btnEliminar { 
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	border: 1px solid; 
+	width: 6em; 
+	height: 2em;
+	cursor: pointer; 
+	background: #E80003;
+	border-radius: 5px;
+	color: #FFF;
+        
+}
+
+
+
+table { 
+  margin: 1em 0 3em 0;
+}
+
+table tr th, table tr td { 
+  background: #D82910;
+  color: #FFF;
+  padding: 0.50em 0.5em;
+  text-align: left;
+}
+  
+table tr td { 
+  background: #DDD;
+  color: #47433F;
+  padding: 0.60em 0.5em;
+  border-top: 1px solid #FFF;
+}
+
+
+
+.text {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.select1 {
+    width: 23%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.selectDialog {
+    width: 43%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+
+.text_precio {
+    width: 19%;
+    padding: 4px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+    
+}
+
+.text_dialog_buscar {
+    width: 50%;
+    padding: 4px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+    
+}
+
+
+.number {
+	width: 15%;
+    padding: 4px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+
+}
+
+.date {
+	width: 23%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+
+}
+
+
+.div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+
+.buttonGeneral {
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	border: 1px solid; 
+	width: 12em; 
+	
+	height: 2em;
+	cursor: pointer; 
+	background: #E80003;
+	border-radius: 4px;
+	color: #FFF;
+}
+
+.textCB {
+    width: 11%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.buttonSelect1 {
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	border: 1px solid; 
+	width: 2em; 
+	background:  url(../images/agregar.png)  no-repeat 0 0;
+	height: 2em;
+	cursor: pointer; 
+
+	border-radius: 3px;
+	color: #FFF;
+}
+
+.buttonSelect2 {
+	
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	border: 1px solid; 
+	width: 2em; 
+	background:  url(../images/buscar_dialog.png) no-repeat 0 0;
+	height: 2em;
+	cursor: pointer; 
+
+	border-radius: 3px;
+	color: #FFF;
+}
+
+
+
+
+/*saco el boton de la x del dialog */
+.ui-dialog-titlebar-close{
+    display: none;
+}
+
+
+.modal-body{
+  height: 95px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+
+	
